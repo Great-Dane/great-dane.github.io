@@ -1,0 +1,66 @@
+.header {
+    font-family: Century Gothic;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+}
+
+.buttons {
+    display: table;
+    margin: 10px auto 0px auto;
+}
+
+button {
+    font-family: Century Gothic;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+button.btn-primary.anything-goes {
+    background-color: #91268e;
+    border-color: #333;
+}
+button.btn-primary.hypotheticals {
+    background-color: #f7921e;
+    border-color: #333;
+}
+button.btn-primary.no-brainers {
+    background-color: #01aef0;
+    border-color: #333;
+}
+button.btn-primary.personals {
+    background-color: #fef200;
+    border-color: #333;
+}
+button.btn-primary.random-question {
+    background-color: #333;
+    border-color: #333;
+}
+
+button.btn-primary.anything-goes:hover {
+    background-color: #731570;
+}
+button.btn-primary.hypotheticals:hover {
+    background-color: #c17316;
+}
+button.btn-primary.no-brainers:hover {
+    background-color: #248ab5;
+}
+button.btn-primary.personals:hover {
+    background-color: #c3bb20;
+}
+button.btn-primary.random-question:hover {
+    background-color: #161515
+}
+
+#question {
+    font-family: Century Gothic;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+}
+#category {
+    font-family: Century Gothic;
+    font-weight: bold;
+    text-align: center;
+}
