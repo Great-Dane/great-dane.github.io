@@ -1,23 +1,31 @@
-.header {
+* {
     font-family: Century Gothic;
+}
+
+.header {
     font-weight: bold;
     font-size: 36px;
     text-align: center;
 }
 
-.buttons {
-    display: table;
-    margin: 10px auto 0px auto;
+.content {
+    margin-bottom: 0.5rem;
 }
 
 button {
-    font-family: Century Gothic;
     font-weight: bold;
-    margin-left: 15px;
+    margin: 15px;
+    width: 80%;
+    min-height: 60px;
+    opacity: 0.9;
+}
+
+.btn-primary {
+    color: black;
 }
 
 button.btn-primary.anything-goes {
-    background-color: #91268e;
+    background-color: blueviolet;
     border-color: #333;
 }
 button.btn-primary.hypotheticals {
@@ -29,12 +37,13 @@ button.btn-primary.no-brainers {
     border-color: #333;
 }
 button.btn-primary.personals {
-    background-color: #fef200;
+    background-color: gold;
     border-color: #333;
 }
 button.btn-primary.random-question {
     background-color: #333;
     border-color: #333;
+    color: white;
 }
 
 button.btn-primary.anything-goes:hover {

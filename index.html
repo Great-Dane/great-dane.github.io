@@ -13,20 +13,31 @@
 </head>
 <body>
 <div class="row">
-    <div class="col-xs-12 header">loaded questions</div>
+    <div class="col header">loaded questions</div>
 </div>
-<div class="row">
-    <div class="buttons">
-        <button class="btn-primary anything-goes" onclick="anythingGoes()">Anything Goes</button>
-        <button class="btn-primary hypotheticals" onclick="hypotheticals()">Hypotheticals</button>
-        <button class="btn-primary no-brainers" onclick="noBrainers()">No-Brainers</button>
-        <button class="btn-primary personals" onclick="personals()">Personals</button>
-        <button class="btn-primary random-question" onclick="randomQuestion()">Random Question!</button>
-    </div>
-</div>
-<div class="row">
-    <div id="question" class="col-xs-12">Click a button!</div>
+<div class="row content">
+    <div id="question" class="col-xs-12"></div>
     <div id="category" class="col-xs-12"></div>
+</div>
+<div class="row text-center">
+    <button class="btn-primary random-question" onclick="randomQuestion()">Get a random question!</button>
+</div>
+<div class="row text-center">
+    <div class="col">Or pick a category:</div>
+</div>
+<div class="row text-center">
+    <div class="col-xs-12 col-md-6">
+        <button class="btn-primary anything-goes" onclick="anythingGoes()">Anything Goes</button>
+    </div>
+    <div class="col-xs-12 col-md-6">
+        <button class="btn-primary hypotheticals" onclick="hypotheticals()">Hypotheticals</button>
+    </div>
+    <div class="col-xs-12 col-md-6">
+        <button class="btn-primary no-brainers" onclick="noBrainers()">No-Brainers</button>
+    </div>
+    <div class="col-xs-12 col-md-6">
+        <button class="btn-primary personals" onclick="personals()">Personals</button>
+    </div>
 </div>
 </body>
 </html>
