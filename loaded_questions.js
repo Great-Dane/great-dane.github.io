@@ -1,4 +1,3 @@
-console.log('here we go');
 var idx = -1;
 var data;
 var past_questions = [-1];
@@ -7,7 +6,6 @@ Papa.parse("https://raw.githubusercontent.com/Great-Dane/great-dane.github.io/ma
     download: true,
     complete: function(results) {
         data = results.data;
-        console.log(data);
     }
 });
 
