@@ -50,6 +50,14 @@ button.btn-primary.random-question {
     border-color: #333;
     color: white;
 }
+button.btn-primary.loaded-questions-button {
+    background-color: #01aef0;
+    border-color: #333;
+}
+button.btn-primary.scattergories-button {
+    background-color: #e71e26;
+    border-color: #333;
+}
 
 button.btn-primary.anything-goes:hover {
     background-color: #731570;
@@ -66,6 +74,12 @@ button.btn-primary.personals:hover {
 button.btn-primary.random-question:hover {
     background-color: #161515
 }
+button.btn-primary.loaded-questions-button:hover {
+    background-color: #248ab5;
+}
+button.btn-primary.scattergories-button:hover {
+    background-color: #b3171d;
+}
 
 #question {
     font-family: Century Gothic;
@@ -77,4 +91,9 @@ button.btn-primary.random-question:hover {
     font-family: Century Gothic;
     font-weight: bold;
     text-align: center;
+}
+
+#letter {
+    font-size: xxx-large;
+    font-weight: bold;
 }

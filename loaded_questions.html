@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loaded Questions!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="./papaparse.min.js"></script>
+    <script src="./loaded_questions.js"></script>
+</head>
+<body>
+<div class="row">
+    <div class="col header">loaded questions</div>
+</div>
+<div class="row content">
+    <div id="question" class="col-xs-12"></div>
+    <div id="category" class="col-xs-12"></div>
+</div>
+<div class="row text-center">
+    <button class="btn-primary random-question" onclick="randomQuestion()">Get a random question!</button>
+</div>
+<div class="row text-center">
+    <div class="col">Or pick a category:</div>
+</div>
+<div class="row text-center">
+    <div class="col-xs-12 col-md-6">
+        <button class="btn-primary anything-goes" onclick="anythingGoes()">Anything Goes</button>
+    </div>
+    <div class="col-xs-12 col-md-6">
+        <button class="btn-primary hypotheticals" onclick="hypotheticals()">Hypotheticals</button>
+    </div>
+    <div class="col-xs-12 col-md-6">
+        <button class="btn-primary no-brainers" onclick="noBrainers()">No-Brainers</button>
+    </div>
+    <div class="col-xs-12 col-md-6">
+        <button class="btn-primary personals" onclick="personals()">Personals</button>
+    </div>
+</div>
+</body>
+</html>

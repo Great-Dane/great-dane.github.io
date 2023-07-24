@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Loaded Questions!</title>
+    <title>Scattergories!</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./loaded_questions.css">
+    <link rel="stylesheet" href="./styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="./papaparse.min.js"></script>
@@ -16,9 +16,10 @@
     <div class="col header">scattergories</div>
 </div>
 <div class="row text-center">
-    <button class="btn-primary random-question" onclick="generateList()">Generate a list!</button>
+    <button class="btn-primary scattergories-button" onclick="generateList()">Generate a list!</button>
 </div>
 <div class="row">
+    <p id="letter" class="text-center"></p>
     <p class="category">
         <span>1. </span>
         <span id="cat1"></span>

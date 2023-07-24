@@ -319,6 +319,7 @@ var scattergoriesData = [
   ];
 var used_categories = [-1];
 var selected_categories = [];
+var letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'R', 'S', 'T', 'W'];
 
 // Papa.parse("./scattergories.csv", { 
 //     download: true,
@@ -329,6 +330,11 @@ var selected_categories = [];
 // });
 
 function generateList() {
+    // Generate letter
+    var letter = letters[Math.floor(Math.random()*letters.length)];
+    document.getElementById("letter").innerHTML = letter;
+
+    // Generate categories
     var category = "";
     idx = Math.floor(Math.random()*scattergoriesData.length);
     category = scattergoriesData.splice(idx, 1)[0];
