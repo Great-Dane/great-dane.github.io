@@ -317,8 +317,6 @@ var scattergoriesData = [
     "Words with a Double Letter",
     "World Leaders/Politicians"
   ];
-var used_categories = [-1];
-var selected_categories = [];
 var letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'R', 'S', 'T', 'W'];
 
 // Papa.parse("./scattergories.csv", { 
@@ -336,84 +334,13 @@ function generateList() {
 
     // Generate categories
     var category = "";
-    idx = Math.floor(Math.random()*scattergoriesData.length);
-    category = scattergoriesData.splice(idx, 1)[0];
-    document.getElementById("cat1").innerHTML = category;
-    
-    idx = Math.floor(Math.random()*scattergoriesData.length);
-    category = scattergoriesData.splice(idx, 1)[0];
-    document.getElementById("cat2").innerHTML = category;
-    
-    idx = Math.floor(Math.random()*scattergoriesData.length);
-    category = scattergoriesData.splice(idx, 1)[0];
-    document.getElementById("cat3").innerHTML = category;
-    
-    idx = Math.floor(Math.random()*scattergoriesData.length);
-    category = scattergoriesData.splice(idx, 1)[0];
-    document.getElementById("cat4").innerHTML = category;
-    
-    idx = Math.floor(Math.random()*scattergoriesData.length);
-    category = scattergoriesData.splice(idx, 1)[0];
-    document.getElementById("cat5").innerHTML = category;
-    
-    idx = Math.floor(Math.random()*scattergoriesData.length);
-    category = scattergoriesData.splice(idx, 1)[0];
-    document.getElementById("cat6").innerHTML = category;
-    
-    idx = Math.floor(Math.random()*scattergoriesData.length);
-    category = scattergoriesData.splice(idx, 1)[0];
-    document.getElementById("cat7").innerHTML = category;
-    
-    idx = Math.floor(Math.random()*scattergoriesData.length);
-    category = scattergoriesData.splice(idx, 1)[0];
-    document.getElementById("cat8").innerHTML = category;
-    
-    idx = Math.floor(Math.random()*scattergoriesData.length);
-    category = scattergoriesData.splice(idx, 1)[0];
-    document.getElementById("cat9").innerHTML = category;
+    var elementId = "";
+    for (let i=1; i<10; i++) {
+        elementId = `cat${i}`;
+        console.log(elementId);
+        idx = Math.floor(Math.random()*scattergoriesData.length);
+        category = scattergoriesData.splice(idx, 1)[0];
+        document.getElementById(elementId).innerHTML = category;
+    }
+
 }
-
-// function anythingGoes() {
-//     while (past_questions.includes(idx)) {
-//         idx = Math.floor(Math.random()*115) + 120;
-//     }
-//     past_questions.push(idx);
-//     document.getElementById("question").innerHTML = data[idx][0];
-//     document.getElementById("category").innerHTML = data[idx][1];
-// }
-
-// function hypotheticals() {
-//     while (past_questions.includes(idx)) {
-//         idx = Math.floor(Math.random()*120);
-//     }
-//     past_questions.push(idx);
-//     document.getElementById("question").innerHTML = data[idx][0];
-//     document.getElementById("category").innerHTML = data[idx][1];
-// }
-
-// function noBrainers() {
-//     while (past_questions.includes(idx)) {
-//         idx = Math.floor(Math.random()*119) + 237;
-//     }
-//     past_questions.push(idx);
-//     document.getElementById("question").innerHTML = data[idx][0];
-//     document.getElementById("category").innerHTML = data[idx][1];
-// }
-
-// function personals() {
-//     while (past_questions.includes(idx)) {
-//         idx = Math.floor(Math.random()*119) + 357;
-//     }
-//     past_questions.push(idx);
-//     document.getElementById("question").innerHTML = data[idx][0];
-//     document.getElementById("category").innerHTML = data[idx][1];
-// }
-
-// function randomQuestion() {
-//     while (past_questions.includes(idx)) {
-//         idx = Math.floor(Math.random()*477);
-//     }
-//     past_questions.push(idx);
-//     document.getElementById("question").innerHTML = data[idx][0];
-//     document.getElementById("category").innerHTML = data[idx][1];
-// }
