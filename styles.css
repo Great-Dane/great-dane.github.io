@@ -93,6 +93,10 @@ button.btn-primary.scattergories-button:hover {
     text-align: center;
 }
 
+.values {
+    font-size: xxx-large;
+    font-weight: bold;
+}
 #letter {
     font-size: xxx-large;
     font-weight: bold;

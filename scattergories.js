@@ -327,20 +327,33 @@ var letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 
 //     }
 // });
 
+var timer = new easytimer.Timer();
+// $('#countdown .values').html(timer.getTimeValues().toString());
+
+
 function generateList() {
-    // Generate letter
-    var letter = letters[Math.floor(Math.random()*letters.length)];
-    document.getElementById("letter").innerHTML = letter;
+  // Generate letter
+  var letter = letters[Math.floor(Math.random()*letters.length)];
+  document.getElementById("letter").innerHTML = letter;
 
-    // Generate categories
-    var category = "";
-    var elementId = "";
-    for (let i=1; i<10; i++) {
-        elementId = `cat${i}`;
-        console.log(elementId);
-        idx = Math.floor(Math.random()*scattergoriesData.length);
-        category = scattergoriesData.splice(idx, 1)[0];
-        document.getElementById(elementId).innerHTML = category;
-    }
+  // Generate categories
+  var category = "";
+  var elementId = "";
+  for (let i=1; i<10; i++) {
+    elementId = `cat${i}`;
+    idx = Math.floor(Math.random()*scattergoriesData.length);
+    category = scattergoriesData.splice(idx, 1)[0];
+    document.getElementById(elementId).innerHTML = category;
+  }
 
+  timer = new easytimer.Timer();
+  timer.start({countdown: true, startValues: {seconds: 60}});
+  
+  timer.addEventListener('secondsUpdated', function (e) {
+      $('#countdown .values').html(timer.getTotalTimeValues().seconds.toString());
+  });
+  
+  timer.addEventListener('targetAchieved', function (e) {
+      $('#countdown .values').html('KABOOM!!');
+  });
 }
