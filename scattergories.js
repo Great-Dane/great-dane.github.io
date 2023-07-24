@@ -354,6 +354,7 @@ function generateList() {
   });
   
   timer.addEventListener('targetAchieved', function (e) {
-      $('#countdown .values').html('KABOOM!!');
+    var audio = new Audio('./time_up.mp3');
+    audio.play();
   });
 }
