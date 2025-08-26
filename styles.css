@@ -58,6 +58,11 @@ button.btn-primary.scattergories-button {
     background-color: #e71e26;
     border-color: #333;
 }
+button.btn-primary.game-changer-button {
+    background-color: #38761d;
+    border-color: #333;
+    color: white;
+}
 
 button.btn-primary.anything-goes:hover {
     background-color: #731570;
