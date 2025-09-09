@@ -7,8 +7,19 @@ body {
   padding: 2rem 6rem;
 }
 
+img {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
 .montserrat-900 {
   font-weight: 900;
+}
+
+h1 {
+  margin-bottom: 10px;
 }
 
 h2, h3 {
