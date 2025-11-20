@@ -7,7 +7,7 @@ body {
   padding: 2rem 6rem;
 }
 
-img {
+img#logo-header {
   width: 100%;
   max-width: 500px;
   margin-top: 10px;
@@ -54,4 +54,19 @@ p, li, button {
 
 .nhsuk-card-group__item {
   display: block;
+}
+
+.past-game {
+  max-height: 325px;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.past-game:not(:first-child) {
+  margin-top: 6px;
+}
+
+img.past-game {
+  border: 3px solid #00662f;
+  border-radius: 30px;
 }
