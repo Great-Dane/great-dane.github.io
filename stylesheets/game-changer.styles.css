@@ -31,6 +31,10 @@ p, li, button {
   font-size: 1.4rem;
 }
 
+a {
+  cursor: pointer;
+}
+
 .title-small-caps {
   font-variant: small-caps;
 }
